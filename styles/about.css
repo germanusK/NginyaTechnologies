@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+
+
+* {
+    /* box-sizing: border-box; */
+    font-family: 'Libre Baskerville', serif;
+}
+
+#example img, #gallery-carousel img {
+    height: 60vh;
+}
+@media screen and (max-width: 950){
+    #example img, #gallery-carousel img {
+        height: 45vh;
+    }
+}
+@media screen and (max-width: 700){
+    #example img, #gallery-carousel img {
+        height: 35vh;
+    }
+    #brand-bar{
+        height: auto;
+        min-height: fit-content;
+    }
+   
+}
+@media screen and (max-width: 450){
+    #example img, #gallery-carousel img {
+        height: 25vh;
+    }
+    /* #brand-bar h1 {
+        
+    } */
+}
+
+#collapse-toggler{
+    display: none;
+    float: right;
+    margin-right: 3rem;
+}
+#brand-bar {
+    background-image: url("../images/background1.jpg");
+    background-repeat: no-repeat;
+    background-clip: inherit;
+    background-size: cover;
+    height: fit-content;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 2px solid white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    min-height: 7rem;
+}
+
+#brand-bar marquee{
+    width: 100%;
+    height: auto;
+}
+
+.head-max {
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+.head-min {
+    font-style: italic;
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+.height {
+    height: fit-content;
+    margin: 2rem auto;
+}
+
+#header h1{
+    float: unset;
+}
+
+.title-underline {
+    width: 150px;
+    height: 10px;
+    margin: 0 auto;
+}
+
+.navbar-expand-sm {
+    background-color: transparent;
+}
+
+.height-80 {
+    min-height: 80vh;
+}
+
+.about-picture {
+    background: url("../images/Bg15.jpg")center/cover no-repeat fixed;
+}
+
+#filler,
+#progress {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('../images/Bg19.jpg')center/cover no-repeat fixed;
+}
+
+#header {
+    background: url("../images/Bg18.jpg")center/cover no-repeat scroll;
+    width: 100%;
+}
+@media screen and (max-width: 500px){
+    #header h1{
+        font-size: x-large;
+    }
+}
+
+.bg-home {
+    background: url('../images/background.jpg') center/cover no-repeat fixed;
+}
+
+#review {
+    margin-top: 8%;
+}
+
+/* Style the body */
+body {
+    font-family: Arial;
+    width: 100%;
+}
+
+/* Header/Logo Title */
+.header {
+    padding: 4rem auto;
+    /* text-align: center; */
+    background: url("../images/soft.jpg")center/cover no-repeat fixed;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+}
+
+
+/* Page Content */
+.content {
+    padding: 20px;
+}
+
+.headerLink:hover {
+    text-decoration: none;
+}
+
+.headerLink {
+    display: block;
+    offset: 0px;
+    justify-self: center;
+    align-self: center;
+}
+
+/*ANIMATIONS*/
+.logoImg {
+    position: relative;
+    -webkit-animation: mymove 4s infinite;
+    /*Safari4.0-8.0*/
+    -webkit-animation-timing-function: linear;
+    /*Safari4.0-8.0*/
+    animation: mymove 4s infinite;
+    animation-timing-function: linear;
+    height: 6rem;
+    width: 6rem;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {
+        left: 1%;
+    }
+
+    to {
+        left: 75%;
+    }
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 200px;
+    }
+}
+
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .headerLink {
+        display: inline;
+        /* offset: 0px; */
+        margin: 0 auto;
+    }
+    #portfolio h1, #branches h1, #carousel h1, #footer h1, #brand-bar h1, #header h1{
+        font-size: x-large;
+        overflow: hidden;
+    }
+    #brand-bar h3{
+        font-size: larger;
+    }
+    #collapse-toggler{
+        display: block;
+    }
+    /* #navbarSection nav{
+        display: none;
+    } */
+}
+@media screen and (max-width: 350px){
+    #portfolio h1, #branches h1, #carousel h1, #footer h1, #brand-bar h1, #header h1{
+        font-size: larger;
+        overflow: hidden;
+    }
+    #brand-bar h3, #portfolio h3{
+        font-size: medium;
+        overflow: hidden;
+    }
+    #homeSection .flip-box{
+        display: none;
+    }
+    .long-word{
+        font-size: x-small;
+    }
+    .long-head{
+        font-size: small;
+    }
+}
+@media screen and (max-width: 240px){
+    #portfolio h1, #branches h1, #carousel h1, #footer h1, #brand-bar h1, #header h1{
+        font-size: medium;
+        overflow: hidden;
+    }
+    #brand-bar h3, #portfolio h3{
+        font-size: small;
+    }
+    #footer-site-email{
+        font-size: x-small;
+    }
+}
+@media screen and (max-width: 200px){
+    #portfolio h1, #branches h1, #carousel h1, #footer h1, #brand-bar h1, #header h1{
+        font-size: medium;
+        overflow: hidden;
+    }
+    #brand-bar h3, #portfolio h3{
+        font-size: small;
+    }
+    #footer-site-email{
+        font-size: x-small;
+    }
+}
+
+.form-card {
+    background-color: cornflowerblue;
+}
+
+.welcomeheader {
+    height: auto;
+    justify-self: center;
+    justify-content: center;
+}
+
+.portfolio-icons {
+    width: 80%;
+    height: 35%;
+}
+
+#homeSection .flip-box-inner {
+    height: fit-content;
+    margin-bottom: 4rem;
+}
+
+#navbarSection li {
+    border-right: 3px solid white;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#navbarSection li:hover {
+    background-color: black;
+    transition-duration: 0.8s;
+    transition-delay: 0s;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(14, 88, 39, 220);
+}
+
+.bottomCarousel {
+    background: url("../images/Image73.png") no-repeat center;
+    width: 100%;
+}

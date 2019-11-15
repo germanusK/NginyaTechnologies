@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="../jquery/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        #carousel{
+            background: url("../images/workspace0.jpg")center/cover no-repeat fixed;
+            width: 100%;
+            align-content: center;
+        }
+        #example img{
+            object-fit: inherit;
+        }
+        #example{
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="carousel" class="header container-fluid text-center">
+        <div class="col-xs-0 col-sm-1 col-md-2 col-lg-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8  mx-auto text-center">
+            <div id="example" class="carousel slide" data-ride="carousel">
+                <!--  Indicators-->
+                <ul class="carousel-indicators">
+                    <li data-target="#example" data-slide-to="0" class="active"></li>
+                    <li data-target="#example" data-slide-to="1"></li>
+                    <li data-target="#example" data-slide-to="2"></li>
+                    <li data-target="#example" data-slide-to="3"></li>
+                </ul>
+                <!-- End of Indicators -->
+
+                <!-- Carousel Images -->
+
+                <div class="carousel-inner">
+                    <div class="item active embed-responsive embed-responsive-16by9">
+                        <img src="../images/pager.png" alt="--Projects" class="img-responsive img-fluid">
+                    </div>
+
+                    <div class="item embed-responsive embed-responsive-16by9">
+                        <img src="../images/pager4.jpeg" alt="--Projects" class="img-responsive img-fluid">
+                    </div>
+
+                    <div class="item embed-responsive embed-responsive-16by9">
+                        <img src="../images/pager_android1.jpg" alt="--Projects" class="img-responsive img-fluid">
+                    </div>
+
+                    <div class="item embed-responsive embed-responsive-16by9">
+                        <img src="../images/software-development.jpg" alt="--Projects" class="img-responsive img-fluid">
+                    </div>
+                </div>
+                <!-- End of Carousel Images -->
+
+                <!-- Carousel Controls -->
+
+                <a href="#example" class="left carousel-control" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#example" class="right carousel-control" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                <!-- End of Carousel Controls -->
+            </div>
+        </div>
+        <div class="col-xs-0 col-sm-1 col-md-2 col-lg-2"></div>
+    </div>
+    <!-- End of Carousel Section -->
+</body>
+</html>
